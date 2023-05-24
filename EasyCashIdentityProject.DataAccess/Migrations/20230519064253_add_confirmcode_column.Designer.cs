@@ -4,6 +4,7 @@ using EasyCashIdentityProject.DataAccess.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EasyCashIdentityProject.DataAccess.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20230519064253_add_confirmcode_column")]
+    partial class add_confirmcode_column
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,6 +66,7 @@ namespace EasyCashIdentityProject.DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("City")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -74,6 +77,7 @@ namespace EasyCashIdentityProject.DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("District")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -84,6 +88,7 @@ namespace EasyCashIdentityProject.DataAccess.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ImageUrl")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")

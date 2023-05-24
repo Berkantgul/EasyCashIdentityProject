@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashIdentityProject.Entity", "EasyCashIdentityProject.Entity\EasyCashIdentityProject.Entity.csproj", "{B18B7C80-3232-47B9-96E3-E326409B2607}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashIdentityProject.Entity", "EasyCashIdentityProject.Entity\EasyCashIdentityProject.Entity.csproj", "{B18B7C80-3232-47B9-96E3-E326409B2607}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashIdentityProject.Dto", "EasyCashIdentityProject.Dto\EasyCashIdentityProject.Dto.csproj", "{0AF47987-F87B-4622-8B16-4CE287114F8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashIdentityProject.Dto", "EasyCashIdentityProject.Dto\EasyCashIdentityProject.Dto.csproj", "{0AF47987-F87B-4622-8B16-4CE287114F8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashIdentityProject.DataAccess", "EasyCashIdentityProject.DataAccess\EasyCashIdentityProject.DataAccess.csproj", "{1E5C75E2-B87E-49FC-933E-98626617279F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashIdentityProject.DataAccess", "EasyCashIdentityProject.DataAccess\EasyCashIdentityProject.DataAccess.csproj", "{1E5C75E2-B87E-49FC-933E-98626617279F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashIdentityProject.Business", "EasyCashIdentityProject.Business\EasyCashIdentityProject.Business.csproj", "{328A4BB1-55D0-48C6-867A-D024BC17F988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashIdentityProject.Business", "EasyCashIdentityProject.Business\EasyCashIdentityProject.Business.csproj", "{328A4BB1-55D0-48C6-867A-D024BC17F988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashIdentityProject.Presentation", "EasyCashIdentityProject.Presentation\EasyCashIdentityProject.Presentation.csproj", "{52E4ACB4-0270-4447-A763-A1D407809A8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashIdentityProject.Presentation", "EasyCashIdentityProject.Presentation\EasyCashIdentityProject.Presentation.csproj", "{215AC205-F9EE-4A81-9001-836857DD6008}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{328A4BB1-55D0-48C6-867A-D024BC17F988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{328A4BB1-55D0-48C6-867A-D024BC17F988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{328A4BB1-55D0-48C6-867A-D024BC17F988}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52E4ACB4-0270-4447-A763-A1D407809A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52E4ACB4-0270-4447-A763-A1D407809A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52E4ACB4-0270-4447-A763-A1D407809A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52E4ACB4-0270-4447-A763-A1D407809A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215AC205-F9EE-4A81-9001-836857DD6008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215AC205-F9EE-4A81-9001-836857DD6008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215AC205-F9EE-4A81-9001-836857DD6008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215AC205-F9EE-4A81-9001-836857DD6008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
