@@ -15,7 +15,7 @@ namespace EasyCashIdentityProject.Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> IndexAsync()
+        public async Task<IActionResult> Index()
         {
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
             AppUserEditDto appUser = new AppUserEditDto
@@ -29,6 +29,31 @@ namespace EasyCashIdentityProject.Presentation.Controllers
                 PhoneNumber = user.PhoneNumber,
             };
             return View(appUser);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(AppUserEditDto appUserEditDto)
+        {
+            if (appUserEditDto.Password == appUserEditDto.ConfirmPassword)
+            {
+                var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+                user.PhoneNumber = appUserEditDto.PhoneNumber;
+                user.Surname = appUserEditDto.Surname;
+                user.City = appUserEditDto.City;
+                user.District = appUserEditDto.District;
+                user.ImageUrl = appUserEditDto.ImageUrl;
+                user.Email = appUserEditDto.Email;
+                user.Name = appUserEditDto.Name;
+                user.PasswordHash = _userManager.PasswordHasher.HashPassword(user,appUserEditDto.Password);
+                var result = await _userManager.UpdateAsync(user);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Login");
+                }
+            }
+            return View(appUserEditDto);
+            
         }
     }
 }
